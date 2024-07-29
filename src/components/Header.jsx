@@ -28,7 +28,6 @@ const Header = () => {
             </ul>
           </li>
           <li><Link exact to="/Academy">Serene Academy</Link></li>
-          <li><Link exact to="/Career">Career</Link></li>
         </ul>
       </nav>
     </header>

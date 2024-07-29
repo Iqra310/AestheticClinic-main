@@ -38,7 +38,7 @@ const FinalJob= () => {
 
   return (
     <motion.section
-      className="Job Duties"
+      className="Job-Duties"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}

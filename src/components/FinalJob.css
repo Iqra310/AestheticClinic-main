@@ -1,3 +1,7 @@
+.Job-Duties{
+  margin-left: -78px;
+  margin-top: 10px;
+}
 .ab {
     margin-top:-50px;
     margin-bottom: 30px;
@@ -26,7 +30,7 @@
     flex-direction: row;
     
       margin: 30px ; /* Adjust margins for better alignment */
-     margin-left: 300px; 
+     margin-left: 500px; 
      margin-top: 60px;
      margin-bottom: 50px;
      gap:20px;
@@ -48,7 +52,9 @@
       font-weight: bold; /* Bold text */
       cursor: pointer; /* Pointer cursor on hover */
       margin-top: -10px; /* Space between text and button */
-      margin-right: -100px;
+      align-items: center;
+      
+    
     }
     
     .le a {
@@ -57,5 +63,6 @@
     }
     
     .le:hover {
-      background-color: #0056b3; /* Darker blue on hover */
+      background-color: rgb(241, 206, 7); /* Darker blue on hover */
+      color: black;
     }

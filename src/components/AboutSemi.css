@@ -5,22 +5,25 @@
     font-size: 44px;
     margin-bottom: 50px;
   }
+  .about-section{
+    margin-left: 100px;
+  }
   .about-text h2 {
-    margin-left: -600px;
+    margin-right: 850px;
     font-size: 20px;
     margin-bottom: 25px;
-    
+
   }
   .about-text p {
     font-size: 18px;
-    padding-bottom: 800;
+    padding-left:45px ;
     width: 800px;
-    margin-left: 170px;
     text-align: left;
   }
   .about-image Img {
-    padding-right: 200px;
-    width: 700px;
-    height: 300px;
+    margin-right: 400px;
+    padding-top: 50px;
+    width: 750px;
+    height: 400px;
    
   }
