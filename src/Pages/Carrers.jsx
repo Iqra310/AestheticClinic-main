@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import L from '../pics/L.png';
-
+import image from '../components/ImageSection'
 import Receptionist from '../components/Receptionist';
 import LabOfficer from '../components/LabOfficer';
 import JobDuties from '../components/JobDuties';
@@ -19,7 +19,8 @@ const Career =() => {
    
     
       <Header />
-      <img src={L} alt="Acne" />
+      
+      <img src={L} alt="Main" />
       <acneImage/>
       <Receptionist/>
       <JobDuties/>

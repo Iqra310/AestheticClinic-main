@@ -1,31 +1,9 @@
-.lab-officer {
-    padding: -20px;
-    margin-top: -160px;
-    padding-left: 170px;
-    padding-right: 170px;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-  
-  .lab-officer h2 {
-    font-size: 25px;
-    margin-top: 180px;
-    padding-top: 130px;
-    width: 230px;
-  }
-  .about-container{
-    display:flex;
-    flex-wrap:wrap;
-    transition : width 2s;
-    padding:-150px;
-    margin-top: -40px;
-  }
-  
-  .lab-officer p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    width: 430px;
-   
-  }
-  
-  
+.lab-officer{
+  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-left: 125px;
+  text-align: left;
+  max-width: 800px;
+}
+
+

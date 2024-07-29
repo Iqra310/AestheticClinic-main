@@ -38,15 +38,15 @@ const LabOfficer = () => {
 
   return (
     <motion.section
-      className="lab officer"
+      className="lab-officer"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
     >
 
-      <div className="about-container">
+     
         <motion.div
-          className="about-text"
+          className="Paragraph"
           initial={{ opacity: 0, x: -50 }}
           animate={controlsText}
         >
@@ -57,7 +57,7 @@ const LabOfficer = () => {
           </p>
           </motion.div>
          
-      </div>
+  
    
       
     

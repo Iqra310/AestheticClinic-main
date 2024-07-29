@@ -16,7 +16,7 @@ const Choose = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.querySelector('.boxes-container');
+      const element = document.querySelector('.galactic-boxes');
       if (element) {
         const top = element.getBoundingClientRect().top;
         const isVisible = top < window.innerHeight;
@@ -33,13 +33,13 @@ const Choose = () => {
   }, []);
 
   return (
-    <div className="sponser">
-      <div className="why-choose-us">
+    <div className="cosmic-container">
+      <div className="stellar-header">
         <h1>Why Choose Us?</h1>
       </div>
-      <div className="hold">
+      <div className="galactic-boxes">
         <motion.div
-          className="box"
+          className="nebula-box"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -50,7 +50,7 @@ const Choose = () => {
           <p>Our team consists of highly qualified and experienced aestheticians who are passionate about skincare and committed to providing exceptional service.</p>
         </motion.div>
         <motion.div
-          className="box"
+          className="nebula-box"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -61,7 +61,7 @@ const Choose = () => {
           <p>We believe in personalized care. We take the time to understand your unique skin concerns and develop a treatment plan tailored to your specific needs.</p>
         </motion.div>
         <motion.div
-          className="box"
+          className="nebula-box"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -72,7 +72,7 @@ const Choose = () => {
           <p>We utilize the latest advancements in aesthetics technology to deliver the most effective and safe treatments available.</p>
         </motion.div>
         <motion.div
-          className="box"
+          className="nebula-box"
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           transition={{ duration: 0.5, delay: 0.8 }}

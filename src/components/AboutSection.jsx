@@ -10,7 +10,7 @@ const AboutSection = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.querySelector('.about-section');
+      const element = document.querySelector('.info-section');
       if (element) {
         const top = element.getBoundingClientRect().top;
         const isVisible = top < window.innerHeight;
@@ -38,15 +38,15 @@ const AboutSection = () => {
 
   return (
     <motion.section
-      className="portion"
+      className="info-section"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
     >
       <h1>Serene Skincare Aesthetics Clinic & Wellness Centre</h1>
-      <div className="segment">
+      <div className="info-container">
         <motion.div
-          className="text"
+          className="info-text"
           initial={{ opacity: 0, x: -50 }}
           animate={controlsText}
         >
@@ -56,7 +56,7 @@ const AboutSection = () => {
           </p>
         </motion.div>
         <motion.div
-          className="ya-image"
+          className="info-image"
           initial={{ opacity: 0, x: 50 }}
           animate={controlsImage}
         >

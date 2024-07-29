@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './MakeupService.css';
+
 import lipImage from '../pics/lip.jpg'; 
 import two from '../pics/cheek.jpg';
 import three from '../pics/lash lift.jpg';
@@ -43,6 +44,7 @@ const MakeupServices = () => {
         transition={{ duration: 2 }}
       >
         <h1>About Semi-Permanent Makeup Services</h1>
+      
       </motion.section>
       <div className="boxes-container">
         <div className="box-row">
