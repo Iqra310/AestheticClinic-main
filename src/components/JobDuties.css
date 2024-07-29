@@ -1,0 +1,23 @@
+.job-duties-key {
+    margin-top:-50px;
+    margin-bottom: 30px;
+    margin-left:200px;
+    text-align:left;
+    max-width: 800px;
+  }
+  .job-duties-key h2{
+  padding-top: 20px;
+  margin-top: -50px;
+  text-align:left;
+  font-size: 25px;
+  }
+  .job-duties-key ul{
+      list-style-type: disc;
+      padding-left: 20px; /* Reduce padding to align bullets */
+      margin: 10px 0; /* Reduce space above and below the list */
+  }
+  .job-duties-key li {
+    font-size: 16px;
+    margin: 5px 0; /* Reduce space between list items */
+    line-height: 1.5; /* Improved line spacing */
+  }

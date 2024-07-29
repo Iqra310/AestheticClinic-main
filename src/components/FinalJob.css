@@ -1,0 +1,61 @@
+.ab {
+    margin-top:-50px;
+    margin-bottom: 30px;
+    margin-left:200px;
+    text-align:left;
+    max-width: 800px;
+  }
+  .tt h2{
+  padding-top: 20px;
+  margin-top: -50px;
+  text-align:left;
+  font-size: 25px;
+  }
+  .tt ul{
+      list-style-type: disc;
+      padding-left: 20px; /* Reduce padding to align bullets */
+      margin: 10px 0; /* Reduce space above and below the list */
+  }
+  .tt li {
+    font-size: 16px;
+    margin: 5px 0; /* Reduce space between list items */
+    line-height: 1.5; /* Improved line spacing */
+  }
+  .appointment-done {
+    display:flex;
+    flex-direction: row;
+    
+      margin: 30px ; /* Adjust margins for better alignment */
+     margin-left: 300px; 
+     margin-top: 60px;
+     margin-bottom: 50px;
+     gap:20px;
+     align-items: center;
+      max-width: 800px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000; /* Text color */
+    }
+    
+    .le {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(155, 4, 4); /* Blue background color */
+      color: white; /* White text color */
+      text-decoration: none; /* Remove underline */
+      border-radius: 5px; /* Rounded corners */
+      border: none; /* Remove default border */
+      font-weight: bold; /* Bold text */
+      cursor: pointer; /* Pointer cursor on hover */
+      margin-top: -10px; /* Space between text and button */
+      margin-right: -100px;
+    }
+    
+    .le a {
+      color: white; /* Ensure the link text is white */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    .le:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
