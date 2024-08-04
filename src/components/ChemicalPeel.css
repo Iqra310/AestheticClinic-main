@@ -1,0 +1,66 @@
+.chemical-peel-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif; /* Use a modern font for the heading */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.peel-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase the gap between the cards */
+}
+
+.peel-category {
+  flex: 1 1 200px; /* Adjust the base size and allow items to grow/shrink */
+  max-width: 250px; /* Set a max-width for larger screens */
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px; /* Slightly increase the border-radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increase the box-shadow for more depth */
+  padding: 20px; /* Add more padding for a spacious look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.peel-category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhance the hover effect */
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 150px; /* Set a maximum height for consistency */
+  object-fit: cover; /* Ensure images cover their container without distortion */
+  margin-bottom: 15px; /* Add margin below the image */
+}
+
+.peel-info {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #666;
+  font-family: 'Open Sans', sans-serif; /* Use a clean font for the description */
+}
+
+.peel-title {
+  font-size: 1.25em;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif; /* Match the font of the main heading */
+  font-weight: bold;
+}
+
+.peel-description {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
