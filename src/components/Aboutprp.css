@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif; /* Consistent font styling */
+  color: #333; /* Dark text for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the heading */
+.heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Heading Styles */
+.heading-container h1 {
+  font-size: 2.5rem; /* Responsive font size */
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: #4a4a4a; /* Slightly darker color for better contrast */
+}
+
+/* Container for about section */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Centering the container */
+  padding: 0 15px; /* Padding to prevent content from touching edges */
+}
+
+/* About text box */
+.about-text {
+  padding: 20px;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px; /* Adjusted max-width for better responsiveness */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Added background color for better contrast */
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+/* Subheading */
+.about-text h2 {
+  font-size: 1.8rem; /* Slightly larger font size */
+  margin-bottom: 10px; /* Reduced margin-bottom */
+  color: #333;
+  text-align: center; /* Center-align the subheading */
+  display: inline-block; /* Ensure the heading is in one line */
+  width: 100%; /* Take full width for proper alignment */
+}
+
+/* Paragraph */
+.about-text p {
+  font-size: 1.1rem; /* Slightly larger font size */
+  line-height: 1.6; /* Improved readability */
+  color: #666;
+  margin-top: 10px; /* Reduced margin-top */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 90%;
+  }
+}

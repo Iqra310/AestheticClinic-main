@@ -8,6 +8,8 @@ import HydraFacial from './components/HydraFacial';
 import MakeupServices from './components/MakeupService';  // Correct path and name
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import PrpServices from './components/PrpServices';
+import BBGlowServices from './components/BBGlowServices';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/services/chemical-peel" element={<ChemicalPeel />} />
           <Route path="/services/hydra-facial" element={<HydraFacial />} />
           <Route path="/services/semi-permanent-makeup" element={<MakeupServices />} />
+          <Route path="/services/prp" element={<PrpServices />} />
+          <Route path="/services/bbglow" element={<BBGlowServices />} />
         </Routes>
       </BrowserRouter>
     </div>
