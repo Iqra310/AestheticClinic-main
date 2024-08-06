@@ -23,6 +23,7 @@ const Header = () => {
                 <li><Link to="/services/laser-hair-removal">Laser Hair Removal</Link></li>
                 <li><Link to="/services/semi-permanent-makeup">Semi Permanent Makeup</Link></li>
                 <li><Link to="/services/prp">PRP</Link></li>
+                <li><Link to="/services/bbglow">BBglow</Link></li>
               </ul>
             </li>
             <li><Link to="/academy">Serene Academy</Link></li>
