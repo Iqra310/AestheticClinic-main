@@ -20,7 +20,7 @@ const Header = () => {
               <ul className="dropdown">
                 <li><Link to="/services/hydra-facial">HydraFacial</Link></li>
                 <li><Link to="/services/chemical-peel">Chemical Peel</Link></li>
-                <li><Link to="/services/laser-hair-removal">Laser Hair Removal</Link></li>
+                <li><Link to="/laser">Laser Hair Removal</Link></li>
                 <li><Link to="/services/semi-permanent-makeup">Semi Permanent Makeup</Link></li>
                 <li><Link to="/services/prp">PRP</Link></li>
                 <li><Link to="/services/bbglow">BBglow</Link></li>

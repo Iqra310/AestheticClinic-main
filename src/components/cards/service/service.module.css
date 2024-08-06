@@ -1,0 +1,66 @@
+.serviceContainer {
+  position: relative;
+  max-width: 280px;
+  width: calc(33% - 2rem);
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 10px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.serviceContentContainer {
+  padding: 1rem;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.serviceName {
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.serviceTagline {
+  font-size: 0.85rem;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  color: var(--text-gray-color);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.serviceContent,
+.serviceFooter {
+  text-align: center;
+}
+
+.serviceFooter {
+  margin-top: 1rem;
+}
+
+.serviceButton {
+  padding: 0.65rem 1rem;
+  color: var(--text-white-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.35rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+  .serviceContainer {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .serviceContainer {
+    width: 100%;
+    max-width: unset;
+  }
+}
