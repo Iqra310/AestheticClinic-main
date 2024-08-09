@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import ImageSection from '../components/ImageSection';
 import About from '../components/AboutSection';
 import Choose from '../components/Choose';
-import Service from '../components/Services';
+import Service from '../components/Service';
 import Footer from '../components/Footer';
 
 function Home() {

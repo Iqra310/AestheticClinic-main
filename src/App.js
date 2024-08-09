@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './Pages/Home';
 import Academy from './Pages/SereneAcademy';
 import Careers from './Pages/Carrers';  // Correct path
-import Services from './Pages/Services';
+import Services from './Pages/Servicesi';
 import ChemicalPeel from './components/ChemicalPeel';  // Correct path and name
 import HydraFacial from './components/HydraFacial';
 import MakeupServices from './components/MakeupService';  // Correct path and name
@@ -11,6 +11,7 @@ import './App.css';
 import PrpServices from './components/PrpServices';
 import BBGlowServices from './components/BBGlowServices';
 import LaserHairRemoval from './Pages/services/laserHairRemoval/index';
+import Bookservices from './components/Bookservices';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/laser" element={<LaserHairRemoval/>}/>
           <Route path="/services/prp" element={<PrpServices />} />
           <Route path="/services/bbglow" element={<BBGlowServices />} />
+          <Route path="/book" element={<Bookservices />} />
         </Routes>
       </BrowserRouter>
     </div>

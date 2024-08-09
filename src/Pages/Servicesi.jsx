@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 
 
-const Service =() => {
+const Servicei =() => {
   return (
     
    
@@ -36,4 +36,4 @@ const Service =() => {
   );
 }
 
-export default Service;
+export default Servicei;
