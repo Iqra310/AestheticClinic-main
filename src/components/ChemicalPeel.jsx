@@ -6,13 +6,19 @@ import peels from '../pics/peels.jpeg';
 import recovery from '../pics/recovery.jpeg';
 import Header from './Header';
 import Footer from './Footer';
-import BookAppointment from './BookAppointment';
-import ImageSection from './ImageSection';
+import Mainpic from './Mainpic';
+import Aboutchemical from './Aboutchemical';
+
 const ChemicalPeel = () => {
+  const handleBackClick = () => {
+    window.history.back();
+  };
+
   return (
     <section className="chemical-peel-section">
       <Header />
-      <ImageSection/>
+      <Mainpic />
+      <Aboutchemical />
       <h2 className="section-title">Chemical Peels</h2>
       <div className="peel-categories">
         <div className="peel-category">
@@ -21,7 +27,6 @@ const ChemicalPeel = () => {
             <h3 className="peel-title">Exfoliation</h3>
             <p className="peel-description">Exfoliation products help remove dead skin cells, revealing a brighter and smoother complexion. Perfect for rejuvenating your skin.</p>
           </div>
-          
         </div>
         <div className="peel-category">
           <img src={hydration} alt="Hydration" className="category-image" />
@@ -45,10 +50,13 @@ const ChemicalPeel = () => {
           </div>
         </div>
       </div>
-      <BookAppointment />
+      <button type="submit">Book Appointment</button>
       <Footer />
+
     </section>
+  
   );
 };
 
 export default ChemicalPeel;
+

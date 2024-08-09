@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import Main from '../pics/jpg.jpg';  // Ensure this path is correct
 import { Link } from 'react-router-dom';
+import Main1 from '../pics/L.png'; 
 
 const Header = () => {
   return (

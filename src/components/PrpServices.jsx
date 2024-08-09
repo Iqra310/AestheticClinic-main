@@ -7,8 +7,7 @@ import four from '../pics/four.jpeg';
 import { motion } from 'framer-motion';
 import Header from './Header';
 import Footer from './Footer';
-import BookAppointment from './BookAppointment';
-import ImageSection from './ImageSection';
+import Mainpic from './Mainpic';
 import Aboutprp from './Aboutprp';
 const boxVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -39,7 +38,7 @@ const PrpServices = () => {
   return (
     <>
       <Header />
-      <ImageSection/>
+      <Mainpic/>
     <Aboutprp/>
     <div className="responsive-container">
       
@@ -90,7 +89,8 @@ const PrpServices = () => {
         </motion.div>
       </div>
     </div>
-    <BookAppointment/>
+    <button type="submit">Book Appointment</button>
+
     <Footer/>
   </>
   );

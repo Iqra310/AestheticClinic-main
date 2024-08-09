@@ -55,7 +55,7 @@ const Service = () => {
         <li><strong>Facials:</strong> Deep cleansing, hydrating, anti-aging, and acne-treating facials tailored to your unique skin needs.</li>
         <li><strong>Chemical Peels:</strong> Gentle to moderate peels to improve skin texture, tone, and reduce signs of aging.</li>
         <li><strong>Microneedling:</strong> Minimally invasive treatment to stimulate collagen production for smoother, firmer skin.</li>
-        <li><strong>Botox & Fillers:</strong> Reduce wrinkles, fine lines, and enhance facial features for a more youthful appearance (**Disclaimer: Consult a healthcare professional for suitability**).</li>
+        <li><strong>Botox & Fillers:</strong> Reduce wrinkles, fine lines, and enhance facial features for a more youthful appearance (*Disclaimer: Consult a healthcare professional for suitability*).</li>
         <li><strong>Laser Hair Removal:</strong> Long-lasting hair reduction for a variety of skin tones and hair types.</li>
       </motion.ul>
       <motion.button

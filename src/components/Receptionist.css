@@ -35,7 +35,7 @@
   .message h4 {
     font-size: 20px;
     padding: 10px;
-    margin-left: -19px;
+    margin-left: -125px;
     padding-bottom: 40px;
     margin-top: 10px;
     margin-bottom: -30px;
@@ -44,13 +44,13 @@
   .message h2 {
     font-size: 25px;
     margin-top: 10px;
-    margin-left: -10px;
+    margin-left: -125px;
     margin-bottom: 10px;
     
   }
   
   .message p {
     font-size: 16px;
-   
+   margin-left: -125px;
     width: 850px;
   }

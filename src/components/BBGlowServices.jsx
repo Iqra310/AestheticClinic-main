@@ -10,8 +10,8 @@ import evenTone from '../pics/evenTone.jpeg';
 import safe from '../pics/safe.jpeg';
 import Header from './Header';
 import Footer from './Footer';
-import BookAppointment from './BookAppointment';
-import ImageSection from './ImageSection';
+
+import Mainpic from './Mainpic';
 import Aboutbb from './Aboutbb';
 
 const boxVariants = {
@@ -43,7 +43,7 @@ const BBGlowServices = () => {
   return (
     <>
       <Header />
-      <ImageSection />
+      <Mainpic/>
       <Aboutbb/>
       <div className="responsive-container">
         <div className="boxes-container">
@@ -114,8 +114,9 @@ const BBGlowServices = () => {
             <p>Experience safe and effective treatment with minimal downtime and long-lasting results.</p>
           </motion.div>
         </div>
-        <BookAppointment />
+       
       </div>
+      <button type="submit">Book Appointment</button>
       <Footer />
     </>
   );

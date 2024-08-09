@@ -7,7 +7,9 @@ import two from '../pics/cheek.jpg';
 import three from '../pics/lash lift.jpg';
 import four from '../pics/eyes.jpeg';
 import five from '../pics/tinting.jpg';
-
+import Header from './Header';
+import Footer from './Footer';
+import Mainpic from './Mainpic';
 
 const boxVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -36,79 +38,85 @@ const MakeupServices = () => {
   }, []);
 
   return (
-    <div className="responsive-container">
-      <motion.section
-        className="name"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
-        <h1>About Semi-Permanent Makeup Services</h1>
-      
-      </motion.section>
-      <div className="boxes-container">
-        <div className="box-row">
-          <motion.div
-            className="box"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            variants={boxVariants}
-          >
-            <img src={lipImage} alt="Lip Tint" />
-            <h2>Lip Tint</h2>
-            <p>Add a subtle, natural-looking tint to your lips for a beautiful, long-lasting color.</p>
-          </motion.div>
-          <motion.div
-            className="box"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            variants={boxVariants}
-          >
-            <img src={two} alt="Cheek Tint" />
-            <h2>Cheek Tint</h2>
-            <p>Get a healthy, natural-looking flush on your cheeks with our semi-permanent cheek tint.</p>
-          </motion.div>
-        </div>
-        <div className="box-row">
-          <motion.div
-            className="box"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            variants={boxVariants}
-          >
-            <img src={three} alt="Lash Lift" />
-            <h2>Lash Lift</h2>
-            <p>Enhance your natural lashes with a lift that adds curl and definition without the need for extensions.</p>
-          </motion.div>
-          <motion.div
-            className="box"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            variants={boxVariants}
-          >
-            <img src={four} alt="Brow Lamination" />
-            <h2>Brow Lamination</h2>
-            <p>Sculpt and set your brows in the perfect shape with our brow lamination service.</p>
-          </motion.div>
-        </div>
-        <motion.div
-          className="box"
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          transition={{ duration: 0.5, delay: 1.0 }}
-          variants={boxVariants}
-          style={{ alignSelf: 'center' }}
+    <>
+      <Header />
+      <Mainpic />
+      <div className="responsive-container">
+        <motion.section
+          className="name"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
         >
-          <img src={five} alt="Brow Tint" />
-          <h2>Brow Tint</h2>
-          <p>Darken and define your brows with a tint that lasts for weeks, giving you a polished look.</p>
-        </motion.div>
+          <h1>About Semi-Permanent Makeup Services</h1>
+        </motion.section>
+        <div className="boxes-container">
+          <div className="box-row">
+            <motion.div
+              className="box"
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              variants={boxVariants}
+            >
+              <img src={lipImage} alt="Lip Tint" />
+              <h2>Lip Tint</h2>
+              <p>Add a subtle, natural-looking tint to your lips for a beautiful, long-lasting color.</p>
+            </motion.div>
+            <motion.div
+              className="box"
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              variants={boxVariants}
+            >
+              <img src={two} alt="Cheek Tint" />
+              <h2>Cheek Tint</h2>
+              <p>Get a healthy, natural-looking flush on your cheeks with our semi-permanent cheek tint.</p>
+            </motion.div>
+          </div>
+          <div className="box-row">
+            <motion.div
+              className="box"
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              variants={boxVariants}
+            >
+              <img src={three} alt="Lash Lift" />
+              <h2>Lash Lift</h2>
+              <p>Enhance your natural lashes with a lift that adds curl and definition without the need for extensions.</p>
+            </motion.div>
+            <motion.div
+              className="box"
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              variants={boxVariants}
+            >
+              <img src={four} alt="Brow Lamination" />
+              <h2>Brow Lamination</h2>
+              <p>Sculpt and set your brows in the perfect shape with our brow lamination service.</p>
+            </motion.div>
+          </div>
+          <motion.div
+            className="box"
+            initial="hidden"
+            animate={isVisible ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 1.0 }}
+            variants={boxVariants}
+            style={{ alignSelf: 'center' }}
+          >
+            <img src={five} alt="Brow Tint" />
+            <h2>Brow Tint</h2>
+            <p>Darken and define your brows with a tint that lasts for weeks, giving you a polished look.</p>
+          </motion.div>
+        </div>
+        <button type="submit">Book Appointment</button>
+
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 

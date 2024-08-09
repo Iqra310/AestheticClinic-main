@@ -4,8 +4,8 @@ import './Hydra.css';
 import Footer from './Footer';
 import Header from './Header'; 
 import HydraBasics from './HydraBasics'; //
-import BookAppointment from './BookAppointment';
-import ImageSection from './ImageSection';
+
+import Mainpic from './Mainpic';
 const headingVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 1 } },
@@ -20,11 +20,11 @@ const aboutTextVariants = {
   },
 };
 
-const NewHydraFacial = () => {
+const HydraFacial = () => {
   return (
     <>
       <Header />
-      <ImageSection/> {/* Include Header component */}
+      <Mainpic/> {/* Include Header component */}
       <motion.section
         className="hydra-facial-section"
         initial="hidden"
@@ -47,12 +47,14 @@ const NewHydraFacial = () => {
             </p>
           </motion.div>
         </div>
+     
+
         <HydraBasics /> 
-        <BookAppointment /> 
+        <button type="submit">Book Appointment</button>
         <Footer />
       </motion.section>
     </>
   );
 };
 
-export default NewHydraFacial;
+export default HydraFacial;
