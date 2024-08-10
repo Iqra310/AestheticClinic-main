@@ -3,9 +3,10 @@ import { motion } from 'framer-motion';
 import './Hydra.css';
 import Footer from './Footer';
 import Header from './Header'; 
-import HydraBasics from './HydraBasics'; //
-
+import HydraBasics from './HydraBasics';
 import Mainpic from './Mainpic';
+
+// Define animation variants for heading and text
 const headingVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 1 } },
@@ -14,45 +15,49 @@ const headingVariants = {
 const aboutTextVariants = {
   hidden: { opacity: 0, x: -50 },
   visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1 },
-  },
+    opacity: 1, 
+    x: 0, 
+    transition: { duration: 1 } 
+  }
 };
 
 const HydraFacial = () => {
   return (
     <>
       <Header />
-      <Mainpic/> {/* Include Header component */}
+      <Mainpic /> {/* Include Mainpic component */}
       <motion.section
-        className="hydra-facial-section"
-        initial="hidden"
-        animate="visible"
+        className="hydrafacial-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
       >
-        <motion.div
-          className="hydra-heading-container"
-          variants={headingVariants}
-        >
-          <h1>Serene Skincare Aesthetics Clinic & Wellness Centre</h1>
-        </motion.div>
-        <div className="hydra-about-container">
+        <div className="heading-container">
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={headingVariants}
+          >
+            Serene Skincare Aesthetics Clinic & Wellness Centre
+          </motion.h1>
+        </div>
+        <div className="content-container">
           <motion.div
-            className="hydra-about-text"
+            className="text-box"
+            initial="hidden"
+            animate="visible"
             variants={aboutTextVariants}
           >
-            <h2>Hydra Facial</h2>
+            <h2>About HydraFacial</h2>
             <p>
-              Offering HydraFacial at Serene Skincare Aesthetics Clinic & Wellness Centre is incredibly beneficial because it provides comprehensive skincare by cleansing, exfoliating, extracting, and hydrating the skin, delivering immediate, noticeable results without downtime. This customizable, non-invasive treatment is suitable for all skin types, attracting a broad client base and ensuring high satisfaction and retention. Its versatility and effectiveness can boost our revenue, expand our client base, and enhance our reputation as a modern, cutting-edge facility.
+              HydraFacial is a non-invasive treatment that deeply cleanses, exfoliates, and hydrates your skin using advanced technology. It helps in improving skin texture, reducing fine lines, and giving you a refreshed, radiant look.
             </p>
           </motion.div>
         </div>
-     
-
-        <HydraBasics /> 
-        <button type="submit">Book Appointment</button>
-        <Footer />
       </motion.section>
+      <HydraBasics /> 
+      <button type="submit">Book Appointment</button>
+      <Footer />
     </>
   );
 };

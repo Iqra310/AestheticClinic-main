@@ -14,17 +14,17 @@ const aboutTextVariants = {
 const Aboutbb = () => {
   return (
     <motion.section
-      className="about-bb"
+      className="about-section"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
     >
-      <div className="heading-container">
+      <div className="section-heading">
         <h1>Serene Skincare Aesthetics Clinic & Wellness Centre</h1>
       </div>
-      <div className="about-container">
+      <div className="section-content">
         <motion.div
-          className="about-text"
+          className="content-text"
           initial="hidden"
           animate="visible"
           variants={aboutTextVariants}

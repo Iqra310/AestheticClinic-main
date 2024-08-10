@@ -5,7 +5,7 @@
   align-items: center;
   padding: 20px;
   background-color: white;
-  min-height: 100vh; /* To ensure the footer is placed at the bottom */
+  min-height: 100vh; /* Ensure footer is placed at the bottom */
   box-sizing: border-box;
 }
 
@@ -19,8 +19,6 @@
 
 .name h1 {
   margin-bottom: 90px;
-  align-content: left;
-  margin-right: 260px;
   color: rgb(8, 1, 1);
   font-size: 30px;
 }
@@ -28,35 +26,43 @@
 .box-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line if needed */
+  gap: 20px; /* Space between boxes */
   width: 100%;
   margin-bottom: 20px;
 }
 
 .box {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
   border: 1px solid #ffd700;
   background-color: white;
-  padding: 20px;
-  margin: 10px;
+  padding: 15px; /* Reduced padding */
   border-radius: 5px;
-  width: 30%;
-  max-width: 300px; /* Set a max width to ensure consistency */
+  width: 25%; /* Increased width for more space */
+  max-width: 300px; /* Increased max-width */
   text-align: center;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 300px; /* Adjusted height for reduced box height */
+  box-sizing: border-box; /* Ensure padding and border are included in the box's width and height */
 }
 
 .box img {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
+  height: 180px; /* Maintain a suitable height for images */
   object-fit: cover; /* Ensure images maintain aspect ratio */
   border-radius: 5px;
 }
 
-p {
-  font-size: 1em;
+.box h2 {
+  font-size: 1.2em; /* Slightly larger font size for headings */
+  margin-top: 10px;
+  color: rgb(8, 1, 1);
+}
+
+.box p {
+  font-size: 0.9em; /* Slightly smaller font size */
   line-height: 1.5;
   margin-top: 10px;
   margin-bottom: 0;
@@ -69,8 +75,14 @@ p {
   }
 
   .box {
-    width: 80%;
-    max-width: 80%;
+    width: 90%; /* Adjusted for better fit on smaller screens */
+    max-width: 90%;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .box img {
+    height: 150px; /* Adjust image height for smaller screens */
   }
 }
 

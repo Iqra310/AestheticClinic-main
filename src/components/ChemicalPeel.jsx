@@ -15,10 +15,12 @@ const ChemicalPeel = () => {
   };
 
   return (
-    <section className="chemical-peel-section">
-      <Header />
+    <>
+    <Header />
       <Mainpic />
       <Aboutchemical />
+    <section className="chemical-peel-section">
+    
       <h2 className="section-title">Chemical Peels</h2>
       <div className="peel-categories">
         <div className="peel-category">
@@ -50,11 +52,14 @@ const ChemicalPeel = () => {
           </div>
         </div>
       </div>
+    
       <button type="submit">Book Appointment</button>
-      <Footer />
+      
 
     </section>
-  
+    <Footer />
+    </>
+
   );
 };
 
