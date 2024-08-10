@@ -1,68 +1,77 @@
-.hydra-facial-section {
-  padding: 50px 20px;
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hydra-heading-container {
-  margin-bottom: 40px;
-}
-
-.hydra-facial-section h1 {
-  font-size: 3em;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif; /* Consistent font styling */
+  color: #333; /* Dark text for better readability */
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
 }
 
-.hydra-about-container {
+/* Container for the heading */
+.heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Heading Styles */
+.heading-container h1 {
+  font-size: 2.5rem; /* Responsive font size */
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: #4a4a4a; /* Slightly darker color for better contrast */
+}
+
+/* Container for about section */
+.content-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  margin: 0 auto; /* Centering the container */
+  padding: 0 15px; /* Padding to prevent content from touching edges */
 }
 
-.hydra-about-text {
-  padding: 30px;
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-  border-radius: 15px;
-  width: 90%;
-  max-width: 600px;
+/* About text box */
+.text-box {
+  padding: 20px;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  width: 50%;
+  max-width: 900px; /* Adjusted max-width for better responsiveness */
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Added background color for better contrast */
+  margin: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
-.hydra-about-text:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.hydra-about-text h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+/* Subheading */
+.text-box h2 {
+  font-size: 1.8rem; /* Slightly larger font size */
+  margin-bottom: 10px; /* Reduced margin-bottom */
   color: #333;
+  text-align: center; /* Center-align the subheading */
+  display: inline-block; /* Ensure the heading is in one line */
+  width: 100%; /* Take full width for proper alignment */
 }
 
-.hydra-about-text p {
-  font-size: 1.1em;
-  color: #555;
-  line-height: 1.6;
+/* Paragraph */
+.text-box p {
+  font-size: 1.1rem; /* Slightly larger font size */
+  line-height: 1.6; /* Improved readability */
+  color: #666;
+  margin-top: 10px; /* Reduced margin-top */
 }
 
 @media (max-width: 768px) {
-  .hydra-about-container {
+  .content-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .hydra-about-text {
-    width: 100%;
-    max-width: 100%;
+  .text-box {
+    width: 90%;
   }
 }

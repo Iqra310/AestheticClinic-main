@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './MakeupService.css';
-
 import lipImage from '../pics/lip.jpg'; 
 import two from '../pics/cheek.jpg';
 import three from '../pics/lash lift.jpg';
 import four from '../pics/eyes.jpeg';
-import five from '../pics/tinting.jpg';
 import Header from './Header';
 import Footer from './Footer';
 import Mainpic from './Mainpic';
+import Aboutsectsemi from './Aboutsectsemi';
 
 const boxVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -41,6 +40,7 @@ const MakeupServices = () => {
     <>
       <Header />
       <Mainpic />
+      <Aboutsectsemi />
       <div className="responsive-container">
         <motion.section
           className="name"
@@ -48,7 +48,6 @@ const MakeupServices = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
         >
-          <h1>About Semi-Permanent Makeup Services</h1>
         </motion.section>
         <div className="boxes-container">
           <div className="box-row">
@@ -99,23 +98,10 @@ const MakeupServices = () => {
               <p>Sculpt and set your brows in the perfect shape with our brow lamination service.</p>
             </motion.div>
           </div>
-          <motion.div
-            className="box"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 1.0 }}
-            variants={boxVariants}
-            style={{ alignSelf: 'center' }}
-          >
-            <img src={five} alt="Brow Tint" />
-            <h2>Brow Tint</h2>
-            <p>Darken and define your brows with a tint that lasts for weeks, giving you a polished look.</p>
-          </motion.div>
         </div>
         <button type="submit">Book Appointment</button>
-
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };

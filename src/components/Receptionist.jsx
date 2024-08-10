@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-
 import './Receptionist.css';
-
 
 const Receptionist = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +42,6 @@ const Receptionist = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
     >
-      <h1>Serene Skincare Aesthetics Clinic & Wellness Centre</h1>
       <div className="fluid">
         <motion.div
           className="message"
@@ -54,10 +51,9 @@ const Receptionist = () => {
           <h4>Join Our Team</h4>
           <h2>Receptionist</h2>
           <p>
-            We are seeking a friendly and organized Receptionist to join our team.The Receptionist will be responsible for welcoming clients, answering phone calls, scheduling appointments, and maintaining office cleanliness.
+            We are seeking a friendly and organized Receptionist to join our team. The Receptionist will be responsible for welcoming clients, answering phone calls, scheduling appointments, and maintaining office cleanliness.
           </p>
         </motion.div> 
-       
       </div>
     </motion.section>
   );

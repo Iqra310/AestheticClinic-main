@@ -6,7 +6,7 @@ body {
 }
 
 /* Container for the heading */
-.heading-container {
+.section-heading {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ body {
 }
 
 /* Heading Styles */
-.heading-container h1 {
+.section-heading h1 {
   font-size: 2.5rem; /* Responsive font size */
   margin: 0;
   padding-top: 20px;
@@ -23,7 +23,7 @@ body {
 }
 
 /* Container for about section */
-.about-container {
+.section-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ body {
 }
 
 /* About text box */
-.about-text {
+.content-text {
   padding: 20px;
   border: 2px solid #ffd700;
   border-radius: 12px;
@@ -47,7 +47,7 @@ body {
 }
 
 /* Subheading */
-.about-text h2 {
+.content-text h2 {
   font-size: 1.8rem; /* Slightly larger font size */
   margin-bottom: 10px; /* Reduced margin-bottom */
   color: #333;
@@ -57,7 +57,7 @@ body {
 }
 
 /* Paragraph */
-.about-text p {
+.content-text p {
   font-size: 1.1rem; /* Slightly larger font size */
   line-height: 1.6; /* Improved readability */
   color: #666;
@@ -65,12 +65,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-container {
+  .section-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .about-text {
+  .content-text {
     width: 90%;
   }
 }

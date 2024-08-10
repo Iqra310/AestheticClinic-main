@@ -58,14 +58,7 @@ const Service = () => {
         <li><strong>Botox & Fillers:</strong> Reduce wrinkles, fine lines, and enhance facial features for a more youthful appearance (*Disclaimer: Consult a healthcare professional for suitability*).</li>
         <li><strong>Laser Hair Removal:</strong> Long-lasting hair reduction for a variety of skin tones and hair types.</li>
       </motion.ul>
-      <motion.button
-        className="appointment-button"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        Book an Appointment
-      </motion.button>
+      <button type="submit">Book Appointment</button>
     </motion.section>
   );
 };
